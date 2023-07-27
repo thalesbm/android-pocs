@@ -6,15 +6,27 @@
     android:padding="16dp">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonWorkManager"
+        android:id="@+id/WorkManager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WORK MANAGER TEST" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonIntent"
+        android:id="@+id/Intent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="INTENT TEST" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Koin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KOIN TEST" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Retrofit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RETROFIT TEST" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -5,7 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.example.android.intent.HomeActivity
+import com.example.android.koin.view.UserActivity
 import com.example.android.workmanager.WorkManagerActivity
+import java.lang.Class as Class1
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,16 +15,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button01 = findViewById<AppCompatButton>(R.id.buttonWorkManager)
-        button01.setOnClickListener {
-            val intent = Intent(this, WorkManagerActivity::class.java)
-            startActivity(intent)
+        findViewById<AppCompatButton>(R.id.WorkManager).setOnClickListener {
+            go(WorkManagerActivity::class.java)
         }
 
-        val button02 = findViewById<AppCompatButton>(R.id.buttonIntent)
-        button02.setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
+        findViewById<AppCompatButton>(R.id.Intent).setOnClickListener {
+            go(HomeActivity::class.java)
         }
+
+        findViewById<AppCompatButton>(R.id.Koin).setOnClickListener {
+            go(UserActivity::class.java)
+        }
+
+        findViewById<AppCompatButton>(R.id.Retrofit).setOnClickListener {
+
+        }
+    }
+
+    private fun <T> go(internalClass: Class1<T>) {
+        val intent = Intent(this, internalClass)
+        startActivity(intent)
     }
 }

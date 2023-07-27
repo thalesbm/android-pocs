@@ -15,7 +15,9 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidTests"
+
 include ':app'
 include ':WorkManager'
 include ':Intent'
 include ':Koin'
+include ':Retrofit'

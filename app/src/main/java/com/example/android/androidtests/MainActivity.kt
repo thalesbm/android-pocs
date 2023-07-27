@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.example.android.intent.HomeActivity
 import com.example.android.koin.view.UserActivity
+import com.example.android.retrofit.view.RestActivity
 import com.example.android.workmanager.WorkManagerActivity
 import java.lang.Class as Class1
 
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<AppCompatButton>(R.id.Retrofit).setOnClickListener {
-
+            go(RestActivity::class.java)
         }
     }
 

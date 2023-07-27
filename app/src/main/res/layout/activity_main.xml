@@ -2,7 +2,7 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <androidx.appcompat.widget.AppCompatButton
@@ -10,5 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WORK MANAGER TEST" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INTENT TEST" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

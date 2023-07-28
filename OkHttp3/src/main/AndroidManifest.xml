@@ -3,6 +3,6 @@
     <application>
 
         <activity
-            android:name=".OkHttpActivity" />
+            android:name=".view.OkHttpActivity" />
     </application>
 </manifest>

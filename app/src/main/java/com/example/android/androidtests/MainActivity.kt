@@ -10,7 +10,7 @@ import com.example.android.koin.view.UserKoinActivity
 import com.example.android.mvp.clean.view.ui.UserActivity
 import com.example.android.mvp.view.ui.ClientActivity
 import com.example.android.mvvm.view.ui.EmployerActivity
-import com.example.android.okhttp3.OkHttpActivity
+import com.example.android.okhttp3.view.OkHttpActivity
 import com.example.android.retrofit.view.RestActivity
 import com.example.android.workmanager.WorkManagerActivity
 import java.lang.Class as Class1

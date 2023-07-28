@@ -4,6 +4,6 @@
         android:name=".UserApplication">
 
         <activity
-            android:name="com.example.android.koin.view.UserActivity" />
+            android:name="com.example.android.koin.view.UserKoinActivity" />
     </application>
 </manifest>

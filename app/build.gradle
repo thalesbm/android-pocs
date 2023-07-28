@@ -13,8 +13,6 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -38,6 +36,10 @@ dependencies {
     implementation (project(':Koin'))
     implementation (project(':Retrofit'))
     implementation (project(':Coroutines'))
+    implementation (project(':Architecture-mvi'))
+    implementation (project(':Architecture-mvp'))
+    implementation (project(':Architecture-mvp-clean'))
+    implementation (project(':Architecture-mvvm'))
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'

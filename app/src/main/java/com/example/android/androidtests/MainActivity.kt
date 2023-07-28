@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.example.android.coroutines.view.CoroutinesActivity
 import com.example.android.intent.HomeActivity
-import com.example.android.koin.view.UserActivity
+import com.example.android.koin.view.UserKoinActivity
+import com.example.android.mvp.clean.view.ui.UserActivity
+import com.example.android.mvp.view.ui.ClientActivity
+import com.example.android.mvvm.view.ui.EmployerActivity
 import com.example.android.retrofit.view.RestActivity
 import com.example.android.workmanager.WorkManagerActivity
 import java.lang.Class as Class1
@@ -26,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<AppCompatButton>(R.id.Koin).setOnClickListener {
-            go(UserActivity::class.java)
+            go(UserKoinActivity::class.java)
         }
 
         findViewById<AppCompatButton>(R.id.Retrofit).setOnClickListener {
@@ -35,6 +38,22 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<AppCompatButton>(R.id.Coroutines).setOnClickListener {
             go(CoroutinesActivity::class.java)
+        }
+
+        findViewById<AppCompatButton>(R.id.MVP).setOnClickListener {
+            go(ClientActivity::class.java)
+        }
+
+        findViewById<AppCompatButton>(R.id.MVPClean).setOnClickListener {
+            go(UserActivity::class.java)
+        }
+
+        findViewById<AppCompatButton>(R.id.MVVI).setOnClickListener {
+            // TODO
+        }
+
+        findViewById<AppCompatButton>(R.id.MVVM).setOnClickListener {
+            go(EmployerActivity::class.java)
         }
     }
 

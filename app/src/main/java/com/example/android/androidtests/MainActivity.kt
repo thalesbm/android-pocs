@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.example.android.coroutines.view.CoroutinesActivity
 import com.example.android.intent.HomeActivity
 import com.example.android.koin.view.UserActivity
 import com.example.android.retrofit.view.RestActivity
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<AppCompatButton>(R.id.Retrofit).setOnClickListener {
             go(RestActivity::class.java)
+        }
+
+        findViewById<AppCompatButton>(R.id.Coroutines).setOnClickListener {
+            go(CoroutinesActivity::class.java)
         }
     }
 

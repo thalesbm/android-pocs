@@ -1,6 +1,6 @@
 # android-tests
 
-## Repo novo com pequenos projetos antigos criados para pocs (juntei varios repos em apenas um para organizar o github).
+### Repo novo com pequenos projetos antigos criados para pocs (juntei varios repos em apenas um para organizar o github).
 
 #### WorkManager 
 Projeto de exemplo utilizando WorkManager.
@@ -13,3 +13,6 @@ Projeto de exemplo utilizando Koin.
 
 #### Retrofit
 Projeto de exemplo utilizando Retrofit.
+
+#### Coroutines
+Projeto de exemplo utilizando Coroutines.

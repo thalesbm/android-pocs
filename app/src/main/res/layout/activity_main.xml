@@ -29,4 +29,10 @@
         android:layout_height="wrap_content"
         android:text="RETROFIT TEST" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Coroutines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COROUTINES TEST" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

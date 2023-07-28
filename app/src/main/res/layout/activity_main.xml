@@ -15,58 +15,64 @@
             android:padding="16dp">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/OkHttp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OKHTTP3" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/WorkManager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="WORK MANAGER TEST" />
+                android:text="WORK MANAGER" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/Intent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="INTENT TEST" />
+                android:text="INTENT" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/Koin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="KOIN TEST" />
+                android:text="KOIN" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/Retrofit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RETROFIT TEST" />
+                android:text="RETROFIT" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/Coroutines"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="COROUTINES TEST" />
+                android:text="COROUTINES" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/MVVM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MVVM ARCHITECTURE TEST" />
+                android:text="MVVM ARCHITECTURE" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/MVP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MVP ARCHITECTURE TEST" />
+                android:text="MVP ARCHITECTURE" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/MVPClean"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MVP CLEAN ARCHITECTURE TEST" />
+                android:text="MVP CLEAN ARCHITECTURE" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/MVVI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="MVVI ARCHITECTURE TEST" />
+                android:text="MVVI ARCHITECTURE" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
 

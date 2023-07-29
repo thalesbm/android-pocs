@@ -3,16 +3,15 @@ package com.example.android.okhttp3.viewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.android.okhttp3.CustomRequestCallback
-import com.example.android.okhttp3.model.RestModel
 import com.example.android.okhttp3.repository.RestRepository
 
 class RestViewModel(private val repository: RestRepository) : ViewModel() {
 
-    private val observable: MutableLiveData<RestModel> by lazy {
-        MutableLiveData<RestModel>()
+    private val observable: MutableLiveData<String> by lazy {
+        MutableLiveData<String>()
     }
 
-    fun getCustomObservable(): MutableLiveData<RestModel> {
+    fun getCustomObservable(): MutableLiveData<String> {
         return observable
     }
 
@@ -25,8 +24,8 @@ class RestViewModel(private val repository: RestRepository) : ViewModel() {
     }
 
     fun callRepository() {
-        repository.callRest(object : CustomRequestCallback<RestModel> {
-            override fun success(t: RestModel) {
+        repository.callRest(object : CustomRequestCallback<String> {
+            override fun success(t: String) {
                 observable.value = t
             }
 

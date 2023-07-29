@@ -24,7 +24,7 @@ class OkHttpActivity : AppCompatActivity() {
 
         val response = findViewById<TextView>(R.id.response)
         viewModel.getCustomObservable().observe(this, Observer { item ->
-            response.text = item.userModel.firstName
+            response.text = item
         })
 
         viewModel.getCustomStringObservable().observe(this, Observer { item ->

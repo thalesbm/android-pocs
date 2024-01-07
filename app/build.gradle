@@ -40,6 +40,7 @@ dependencies {
     implementation (project(':Architecture-mvp'))
     implementation (project(':Architecture-mvp-clean'))
     implementation (project(':Architecture-mvvm'))
+    implementation (project(':Architecture-Compose'))
     implementation (project(':OkHttp3'))
 
     implementation 'androidx.core:core-ktx:1.10.1'

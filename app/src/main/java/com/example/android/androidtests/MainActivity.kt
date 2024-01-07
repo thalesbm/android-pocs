@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.example.android.compose.view.ComposeActivity
 import com.example.android.coroutines.view.CoroutinesActivity
 import com.example.android.intent.HomeActivity
 import com.example.android.koin.view.UserKoinActivity
@@ -59,6 +60,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<AppCompatButton>(R.id.OkHttp3).setOnClickListener {
             go(OkHttpActivity::class.java)
+        }
+
+        findViewById<AppCompatButton>(R.id.Compose).setOnClickListener {
+            go(ComposeActivity::class.java)
         }
     }
 
